@@ -8,22 +8,33 @@ const creador = document.getElementById("creador");
 const sobreNicol = document.getElementById("sobreNicol");
 const teOdio = document.getElementById("teOdio");
 const despedida = document.getElementById("despedida");
-const predefinida = document.getElementById("predefinida");
+const predeterminada = document.getElementById("predeterminada");
+
+// Intervalo para la animación de escritura
+let intervalo = null;
 
 // Animación de escritura de la respuesta
 function escribirLetraPorLetra(texto = "Actualmente esta opcion no se encuentra en funcionamiento...", velocidad = 40) {
-  const elemento = document.getElementById("respuesta");
-  elemento.innerHTML = "";
-
-  let i = 0;
-  const intervalo = setInterval(() => {
-    elemento.innerHTML += texto.charAt(i);
-    i++;
-
-    if (i >= texto.length) {
-      clearInterval(intervalo);
+    const elemento = document.getElementById("respuesta");
+    elemento.innerHTML = "";
+    
+    if (elemento.classList.contains("typing") && intervalo !== null) {
+        clearInterval(intervalo);
     }
-  }, velocidad);
+
+    let i = 0;
+    intervalo = setInterval(() => {
+        if (i === 0) {
+            elemento.classList.add("typing");
+        }
+
+        elemento.innerHTML += texto.charAt(i);
+        i++;
+
+        if (i >= texto.length) {
+        clearInterval(intervalo);
+        }
+    }, velocidad);
 }
 
 // Envia una consulta al servidor en general
@@ -85,6 +96,6 @@ despedida.addEventListener("click", async () => {
     escribirLetraPorLetra(await obtenerRespuestaNoIaLocal("chau"), 30);
 });
 
-predefinida.addEventListener("click", async () => {
-    escribirLetraPorLetra(await obtenerRespuestaNoIaLocal("guapeton"), 30);
+predeterminada.addEventListener("click", async () => {
+    escribirLetraPorLetra(await obtenerRespuestaNoIaLocal("kevin"), 30);
 });

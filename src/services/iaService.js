@@ -32,7 +32,6 @@ exports.getNoIAResponse = async (prompt) => {
     // Respuestas para frase de amor
     if (incluye("frase de amor") || incluye("frase") || incluye("frase romántica") || incluye("frase bonita") ||
     incluye("frase linda") || incluye("frase de cariño") || incluye("frase de amor romántica")) {
-      console.log(frases["frase de amor"]);
       respuestas.push(frases["frase de amor"][Math.floor(Math.random() * frases["frase de amor"].length)]);
     }
     
@@ -50,34 +49,44 @@ exports.getNoIAResponse = async (prompt) => {
     }
 
     // Respuestas para "¿me amas?"
-    if (incluye("me amas")) {
+    if (incluye("me amas") || incluye("me quieres") || incluye("me adoras") || incluye("me aprecias") ||
+    incluye("me estimas")) {
       respuestas.push(frases["me amas"][Math.floor(Math.random() * frases["me amas"].length)]);
     }
 
     // Respuestas para info sobre el creador
-    if (incluye("info sobre el creador") || incluye("quien es el creador")) {
+    if (incluye("creador") || incluye("alexmp19") || incluye("alex muñoz") || 
+    incluye("alex pascal")) {
       respuestas.push(frases["creador"][Math.floor(Math.random() * frases["creador"].length)]);
     }
 
     // Respuestas para info sobre Nicol
-    if (incluye("info sobre nicol") || incluye("quien es nicol")) {
+    if (incluye("info sobre nicol") || incluye("quien es nicol") || incluye("nicol") ||
+    incluye("tu novia") || incluye("tu pareja") || incluye("tu chica") ||
+    incluye("quien es tu mujer") || incluye("la mujer mas bella") || incluye("l amor de tu alma")) {
       respuestas.push(frases["sobre nicol"][Math.floor(Math.random() * frases["sobre nicol"].length)]);
     }
 
     // Respuestas para "te odio"
-    if (incluye("te odio")) {
+    if (incluye("te odio") || incluye("te detesto") || incluye("te aborrezco") || incluye("te desprecio") ||
+    incluye("te repudio") || incluye("te rechazo")) {
       respuestas.push(frases["te odio"][Math.floor(Math.random() * frases["te odio"].length)]);
     }
 
     // Respuestas para despedida
-    if (incluye("chau") || incluye("bye") || incluye("hasta luego")) {
+    if (incluye("chau") || incluye("bye") || incluye("hasta luego") ||
+    incluye("hasta pronto") || incluye("adiós") || incluye("nos vemos") ||
+    incluye("hasta la vista") || incluye("hasta la próxima") || incluye("hasta luego, amigo") ||
+    incluye("hasta luego, amiga") || incluye("hasta luego, amor") || incluye("hasta luego, cariño")) {
       respuestas.push(frases["despedida"][Math.floor(Math.random() * frases["despedida"].length)]);
     }
 
-    // Si no se encontró una respuesta, devuelve un mensaje genérico
+    // Si no se encontró una respuesta, devuelve una frase de amor
     if (!respuestas || respuestas.length === 0) {
       respuestas.push(frases["frase de amor"][Math.floor(Math.random() * frases["frase de amor"].length)]);
     }
+
+    // Si hay más de una respuesta, las unimos
     const respuesta = respuestas.join(" ");
     return respuesta;
   } catch (error) {
