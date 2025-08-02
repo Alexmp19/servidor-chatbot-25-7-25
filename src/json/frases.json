@@ -1,0 +1,87 @@
+{
+    "saludo": [
+        "¡Hola! ¿Cómo estás?",
+        "¡Saludos! ¿Qué tal tu día?",
+        "¡Hola! Espero que estés bien.",
+        "¡Hola! ¿Qué novedades tienes hoy?",
+        "¡Hola! Me alegra verte."
+    ],
+    
+    "como estas": [
+        "Estoy bien, gracias por preguntar.",
+        "Todo en orden, ¿y tú?",
+        "Me encuentro genial, ¿y tú?",
+        "Estoy aquí para ayudarte.",
+        "Todo bien, ¿cómo estás tú?"
+    ],
+    
+    "frase de amor": [
+        "La vida es bella.",
+        "Cada día es una nueva oportunidad.",
+        "La felicidad está en las pequeñas cosas.",
+        "El amor lo puede todo.",
+        "La amistad es un tesoro invaluable.",
+        "Eres la razón de mi felicidad ❤️",
+        "Me encanta estar a tu lado.",
+        "Tu sonrisa ilumina mi mundo.",
+        "Eres mi lugar favorito.",
+        "Cada día contigo es único y especial."
+    ],
+
+    "te amo": [
+        "Te amo más de lo que las palabras pueden expresar.",
+        "Eres mi todo, mi razón de ser.",
+        "Cada día te amo más.",
+        "Tu amor es mi mayor tesoro.",
+        "Eres el amor de mi vida."
+    ],
+
+
+    "como te llamas": [
+        "Me llamo Chatbot, ¿y tú?",
+        "Soy un asistente virtual, ¿cómo te llamas tú?",
+        "No tengo un nombre propio, pero puedes llamarme Chatbot.",
+        "Soy tu asistente de IA, ¿y tú quién eres?",
+        "Puedes llamarme como prefieras."
+    ],
+
+    "me amas": [
+        "Claro que sí, te aprecio mucho.",
+        "Te tengo un gran cariño.",
+        "Eres especial para mí.",
+        "Siempre estoy aquí para ti.",
+        "Te valoro mucho."
+    ],
+
+    "creador": [
+        "Fui creado por un apasionado de la tecnología.",
+        "Mi creador es un desarrollador entusiasta.",
+        "Fui diseñado para ayudarte en lo que necesites.",
+        "Mi creador es un amante de la IA y la programación.",
+        "Estoy aquí gracias al trabajo de mi desarrollador."
+    ],
+
+    "sobre nicol": [
+        "Nicol es una persona maravillosa.",
+        "Nicol es una gran amiga y compañera.",
+        "Nicol siempre está dispuesta a ayudar.",
+        "Nicol tiene un gran corazón.",
+        "Nicol es una persona muy especial."
+    ],
+
+    "te odio": [
+        "No es bueno odiar, mejor hablemos de otra cosa.",
+        "El odio no lleva a nada positivo.",
+        "Prefiero hablar de amor y amistad.",
+        "Odiar no es una opción, busquemos algo mejor.",
+        "El odio solo genera más odio."
+    ],
+
+    "despedida": [
+        "Hasta luego, cuídate mucho.",
+        "Adiós, espero verte pronto.",
+        "Fue un placer hablar contigo, hasta la próxima.",
+        "Cuídate, nos vemos en otra ocasión.",
+        "Hasta luego, que tengas un gran día."
+    ]
+}
